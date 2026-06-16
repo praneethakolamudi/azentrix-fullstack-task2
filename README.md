@@ -1,16 +1,73 @@
-# React + Vite
+# Azentrix Fullstack Task 2 - Weather + News Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Live Demo
+Run locally using the steps below
 
-Currently, two official plugins are available:
+## 📸 Screenshots
+Add screenshots here after running the project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+- React JS (Vite)
+- Axios
+- NewsData.io API
+- OpenWeatherMap API
+- CSS Transitions
 
-## React Compiler
+## ✨ Features
+- Real-time weather by city search
+- News with category filtering
+- Dark/Light mode toggle
+- Skeleton loaders
+- Error handling
+- localStorage theme preference
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚙️ Setup Instructions
 
-## Expanding the ESLint configuration
+1. Clone the Repository
+git clone https://github.com/praneethakolamudi/azentrix-fullstack-task2.git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Go to Project Folder
+cd azentrix-fullstack-task2
+
+3. Install Dependencies
+npm install
+
+4. Create .env File
+VITE_WEATHER_KEY=your_openweathermap_key
+VITE_GNEWS_KEY=your_newsdata_key
+
+5. Run the Project
+npm run dev
+
+6. Open in Browser
+http://localhost:5173
+
+## 📁 Project Structure
+src/
+components/
+  SearchBar.jsx
+  WeatherCard.jsx
+  NewsCard.jsx
+  CategoryFilter.jsx
+  SkeletonLoader.jsx
+  ThemeToggle.jsx
+hooks/
+  useWeather.js
+  useNews.js
+App.jsx
+index.css
+
+## 💡 Approach
+- React hooks for state management
+- Custom hooks for API calls
+- Axios for HTTP requests
+- localStorage for theme persistence
+- Skeleton loaders for better UX
+- Error handling for all API failures
+
+## 🔑 API Keys Required
+- OpenWeatherMap: openweathermap.org
+- NewsData: newsdata.io
+
+## 👩‍💻 Developed By
+Praneeta Kolamudi
